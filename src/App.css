@@ -1,0 +1,63 @@
+/* Root container styling */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #fafafa;
+  border-radius: 12px;
+}
+
+/* Logo styles */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 1.5em rgba(100, 108, 255, 0.7));
+  transform: scale(1.05);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 1.5em rgba(97, 218, 251, 0.8));
+}
+
+/* Spin animation for the React logo */
+@keyframes spin-logo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply spin only when motion preference allows */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: spin-logo infinite 18s linear;
+  }
+}
+
+/* Card styling */
+.card {
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 1rem;
+}
+
+/* Subtle text style for docs link */
+.read-the-docs {
+  color: #777;
+  font-size: 0.9rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.read-the-docs:hover {
+  color: #555;
+}
