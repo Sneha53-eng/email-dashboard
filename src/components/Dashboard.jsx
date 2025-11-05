@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "./Sidebar";
-import TopBar from "./TopBar";
+import TopBar from "./Topbar";
 import KPISection from "./KPISection";
 import CentralAnalytics from "./CentralAnalytics";
 
