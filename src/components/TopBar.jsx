@@ -17,16 +17,13 @@ const TopBar = () => {
 
       {/* ===== Right: Status + Profile ===== */}
       <div className="flex items-center space-x-6">
-        {/* System Status */}
         <div className="flex items-center text-sm text-gray-600 bg-gray-50 px-3 py-1.5 rounded-full shadow-inner border border-gray-100">
           <span className="h-2 w-2 rounded-full bg-green-500 mr-2"></span>
           <span className="font-medium">All Systems Operational</span>
         </div>
 
-        {/* Divider */}
         <div className="w-px h-5 bg-gray-200"></div>
 
-        {/* Profile Section */}
         <div className="flex items-center gap-3 cursor-pointer hover:bg-gray-50 px-3 py-2 rounded-xl transition-all duration-200">
           <div className="h-9 w-9 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-semibold shadow-sm">
             S
